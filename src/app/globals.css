@@ -41,7 +41,6 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
-/* Color Variables */
 @layer base {
   :root {
     --background: oklch(20.09% 0.05 264.17);
@@ -92,7 +91,6 @@
   }
 }
 
-/* Utility classes */
 .hover-glow {
   transition: all 0.3s ease;
 }
@@ -146,7 +144,6 @@
   }
 }
 
-/* Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -163,7 +160,6 @@
   background: rgba(124, 58, 237, 0.5);
 }
 
-/* Button glow */
 .button-glow {
   position: relative;
   overflow: hidden;
