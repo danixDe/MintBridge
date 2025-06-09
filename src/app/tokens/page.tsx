@@ -99,7 +99,7 @@ const MintToken: React.FC = () => {
     console.log(`From Token Account: ${tokenAccount.address.toBase58()}`);
 
     } catch (err) {
-      transactionToast(`Error creating token: ${err.message || err}`);
+      transactionToast(`Error creating token: ${err}`);
     toast.error(`Error creating token: ${err}`);
     console.log(`Error creating token: ${ err}`);
 
@@ -195,7 +195,7 @@ const MintToken: React.FC = () => {
     <li><strong>Step 2:</strong> Airdrop 1 SOL from <code>devnet</code> to fund transactions.</li>
     <li><strong>Step 3:</strong> Create a new token mint with 9 decimal places (like SOL).</li>
     <li><strong>Step 4:</strong> Create an Associated Token Account (ATA) for your wallet. <i><b className='text-blue-300'>click on the Create Token account button to do that</b></i></li>
-    <li><strong>Step 5:</strong> Mint tokens to the ATA — now you're holding your custom token. <i><b className='text-purple-300'>click on the Mint Token button to do that</b></i></li>
+    <li><strong>Step 5:</strong> Mint tokens to the ATA — now you&rsquo;re holding your custom token. <i><b className='text-purple-300'>click on the Mint Token button to do that</b></i></li>
     <li><strong>Step 6:</strong> Check total supply & your token account balance.<i><b className='text-teal-600'> click on the Check Balance to do that</b></i></li>
     <li><strong>Step 7:</strong> Send tokens to any wallet (even your own connected wallet) default set to the wallet you are logged in. <i><b className='text-orange-700'>click on the Send Tokens to do that</b></i></li>
   </ul>
