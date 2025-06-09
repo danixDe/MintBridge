@@ -57,7 +57,7 @@ const MintToken: React.FC = () => {
     toWallet = account.address;
   } else {
     return (
-      <div className="min-h-screen bg-black flex items-center justify-center bg-zinc-900 text-white">
+      <div className="min-h-screen flex items-center justify-center bg-zinc-900 text-white">
         <WalletButton />
       </div>
     );
@@ -98,10 +98,10 @@ const MintToken: React.FC = () => {
     toast.success(`From Token Account: ${tokenAccount.address.toBase58()}`);
     console.log(`From Token Account: ${tokenAccount.address.toBase58()}`);
 
-    } catch (err: any) {
+    } catch (err) {
       transactionToast(`Error creating token: ${err.message || err}`);
-    toast.error(`Error creating token: ${err.message || err}`);
-    console.log(`Error creating token: ${err.message || err}`);
+    toast.error(`Error creating token: ${err}`);
+    console.log(`Error creating token: ${ err}`);
 
     }
   };
@@ -124,10 +124,10 @@ const MintToken: React.FC = () => {
             toast.success(`Minted! Txn Signature: ${signature}`);
             console.log(`Minted! Txn Signature: ${signature}`);
 
-    } catch (err: any) {
-      transactionToast(`Error minting token: ${err.message || err}`);
-    toast.error(`Error minting token: ${err.message || err}`);
-    console.log(`Error minting token: ${err.message || err}`);
+    } catch (err) {
+      transactionToast(`Error minting token: ${err}`);
+    toast.error(`Error minting token: ${err}`);
+    console.log(`Error minting token: ${err}`);
 
     }
   };
@@ -145,10 +145,10 @@ const MintToken: React.FC = () => {
     console.log(`Supply: ${mintInfo.supply.toString()}\nBalance: ${accountInfo.amount.toString()}`);
 
 
-    } catch (err: any) {
-      transactionToast(`Error checking balance: ${err.message || err}`);
-            toast.error(`Error checking balance: ${err.message || err}`);
-            console.log(`Error checking balance: ${err.message || err}`);
+    } catch (err) {
+      transactionToast(`Error checking balance: ${err}`);
+            toast.error(`Error checking balance: ${ err}`);
+            console.log(`Error checking balance: ${ err}`);
     }
   };
 
