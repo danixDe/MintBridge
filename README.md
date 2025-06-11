@@ -59,8 +59,8 @@ Solana Devnet is a publicly available test network that mimics the behavior of t
 Clone and run the project locally:
 
 ```bash
-git clone https://github.com/yourusername/solana-token-mint-dapp.git
-cd solana-token-mint-dapp
+git clone https://github.com/danixDe/MintBridge.git
+cd MintBridge
 npm install
 npm run dev
 ```
